@@ -158,10 +158,10 @@ Qed.
 
 (**
   Bi-entailment of Iris propositions is denoted [P ⊣⊢ Q]. It is
-  an equivalence relation and most connectives preserve 
-  this relation is encoded using the setoid library
-  with the typeclass [Proper]. It is therefore possible to use the
-  `rewrite` tactic inside the Iris proofmode.
+  an equivalence relation and most connectives preserve
+  this relation. This preservation is encoded using the setoid library
+  as instances of the [Proper] typeclass. It is therefore possible to use 
+  the `rewrite` tactic inside the Iris proofmode.
   Bi-entailment is defined as [(P -∗ Q) ∧ (Q -∗ P)], so it
   can be decomposed using the [iSplit] tactic.
 
